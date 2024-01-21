@@ -60,7 +60,7 @@ This script takes a customer ID and the number of top recommendations as input a
 
 Open browser and type http://127.0.0.1:5000/. Input the customer ID, Number of Recommendation, then hit the Get Recommendation button for results.
 
-## schedule-training
+## Schedule Training
 
 The model is scheduled to be trained daily at midnight using the schedule library. The training is implemented in a separate thread to avoid blocking the main application.
 
