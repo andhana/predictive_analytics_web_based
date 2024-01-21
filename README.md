@@ -1,5 +1,29 @@
 # predictive_analytics_web_based
 
+recommendation_system/
+│
+├── dataset/
+│   ├── customer_interactions.csv
+│   ├── purchase_history.csv
+│   ├── product_details.csv
+│   └── prepared_data.csv
+│
+├── model/
+│   └── recommendation_model_cf.joblib
+│
+├── templates/
+│   ├── error.html
+│   ├── index.html
+│   └── result.html
+│
+├── app.py
+├── data_preparation.py
+├── inference.py
+├── README.md
+├── requirements.txt
+└── training.py
+
+
 ## Table of Contents
 
 - [Installation](#installation)
