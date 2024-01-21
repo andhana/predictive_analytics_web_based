@@ -33,12 +33,15 @@
 ## Documentation
 
 1. data_preparation.py
+   
    This script prepares the dataset for training and inference. It loads customer interactions, purchase history, and product details data, merges them, generates additional rows, and aggregates features.
 
 2. training.py
+   
    This script trains a collaborative filtering model using the Surprise library. It loads the prepared data, builds a training set, trains the model, saves the model, and evaluates its performance.
 
 3. inference.py
+   
    This script loads the trained collaborative filtering model and provides top product recommendations for a given customer ID.
 
 4. app.py
