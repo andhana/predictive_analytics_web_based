@@ -15,4 +15,4 @@
 1. Clone the repository:
 
    ```bash
-   git clone <https://github.com/andhana/predictive_analytics_web_based.git>
+   git clone https://github.com/andhana/predictive_analytics_web_based.git
