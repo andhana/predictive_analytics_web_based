@@ -7,9 +7,8 @@
 - [Data Preparation](#data-preparation)
 - [Model Training](#model-training)
 - [Inference](#inference)
-- [Web Application](#web-application)
-- [Scheduled Training](#scheduled-training)
-
+- [Documentation](#Documentation)
+  
 ## Installation
 
 1. Clone the repository:
@@ -23,7 +22,16 @@
    pip install -r requirements.txt
 
 ## Usage
-1. Run app.py in terminal:
+
+## data-preparation
+
+   ```bash
+   python data_preparation.py
+
+This script reads customer interactions, purchase history, and product details data, merges them, and generates additional rows to reach a total of 1000 rows. The prepared data is saved in dataset/prepared_data.csv.
+
+2. Model Training
+3. Run app.py in terminal:
    
    ```bash
    python app.py
