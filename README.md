@@ -27,8 +27,8 @@
    
    ```bash
    python app.py
-   Open browser and type http://127.0.0.1:5000/. Input the customer ID, Number of Recommendation, then hit the
-   Get Recommendation button for results.
+
+Open browser and type http://127.0.0.1:5000/. Input the customer ID, Number of Recommendation, then hit the Get Recommendation button for results.
 
 ## Documentation
 
@@ -45,4 +45,5 @@
    This script loads the trained collaborative filtering model and provides top product recommendations for a given customer ID.
 
 4. app.py
+
    This script sets up a Flask web application for user interaction. It includes routes for inputting customer ID and receiving product recommendations. The application also schedules daily training of the recommendation model.
