@@ -23,8 +23,23 @@
    pip install -r requirements.txt
 
 ## Usage
-1. Data Preparation:
-   The data_preparation.py script loads and prepares the dataset for training and inference.
-
+1. Run app.py in terminal:
+   
    ```bash
-   python data_preparation.py
+   python app.py
+   Open browser and type http://127.0.0.1:5000/. Input the customer ID, Number of Recommendation, then hit the
+   Get Recommendation button for results.
+
+## Documentation
+
+1. data_preparation.py
+   This script prepares the dataset for training and inference. It loads customer interactions, purchase history, and product details data, merges them, generates additional rows, and aggregates features.
+
+2. training.py
+   This script trains a collaborative filtering model using the Surprise library. It loads the prepared data, builds a training set, trains the model, saves the model, and evaluates its performance.
+
+3. inference.py
+   This script loads the trained collaborative filtering model and provides top product recommendations for a given customer ID.
+
+4. app.py
+   This script sets up a Flask web application for user interaction. It includes routes for inputting customer ID and receiving product recommendations. The application also schedules daily training of the recommendation model.
