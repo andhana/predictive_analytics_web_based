@@ -7,6 +7,7 @@
 - [Data Preparation](#data-preparation)
 - [Model Training](#model-training)
 - [Inference](#inference)
+- [Schedule Training](#schedule-training)
 - [Documentation](#Documentation)
   
 ## Installation
@@ -30,7 +31,7 @@
    ```bash
    python data_preparation.py
 
-   This script reads customer interactions, purchase history, and product details data, merges them, and generates additional rows to reach a total of 1000 rows. The prepared data is saved in dataset/prepared_data.csv.
+This script reads customer interactions, purchase history, and product details data, merges them, and generates additional rows to reach a total of 1000 rows. The prepared data is saved in dataset/prepared_data.csv.
 
 2. Model Training
    
@@ -39,7 +40,7 @@
    ```bash
    python training.py
 
-   This script uses the prepared data to train a collaborative filtering model, saves the trained model as model/recommendation_model_cf.joblib, and prints evaluation metrics.
+This script uses the prepared data to train a collaborative filtering model, saves the trained model as model/recommendation_model_cf.joblib, and prints evaluation metrics.
 
 3. Inference
 
@@ -47,6 +48,8 @@
 
    ```bash
    python inference.py
+
+This script takes a customer ID and the number of top recommendations as input and returns the recommended products.
 
 4. Web Application
 
@@ -56,6 +59,10 @@
    python app.py
 
 Open browser and type http://127.0.0.1:5000/. Input the customer ID, Number of Recommendation, then hit the Get Recommendation button for results.
+
+## schedule-training
+
+The model is scheduled to be trained daily at midnight using the schedule library. The training is implemented in a separate thread to avoid blocking the main application.
 
 ## Documentation
 
