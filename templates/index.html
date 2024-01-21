@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation System</title>
+</head>
+<body>
+    <h1>Customer Recommendation System</h1>
+    <form action="/predict" method="post">
+        <label for="customer_id">Enter Customer ID:</label>
+        <input type="text" id="customer_id" name="customer_id" required>
+
+        <label for="top_n">Number of Recommendations:</label>
+        <input type="number" id="top_n" name="top_n" value="5" min="1" required>
+
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>
