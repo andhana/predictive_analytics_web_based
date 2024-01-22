@@ -1,6 +1,6 @@
 # Recommender System Web Based
 
-This project aims to develop a recommendation system using collaborative filtering for recommending products to customers based on their behavior.
+This project aims to develop a web-based recommendation system using collaborative filtering for predicts the next product a customer is likely to buy based on their behavior.
 
 ## Table of Contents
 
