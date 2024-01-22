@@ -18,7 +18,7 @@ This project aims to develop a web-based recommendation system using collaborati
 
 1. Clone the repository:
 
-   ```bash
+  ```bash
    git clone https://github.com/andhana/predictive_analytics_web_based.git
 
 2. Install the reuquired Python libraries:
@@ -40,7 +40,7 @@ This project aims to develop a web-based recommendation system using collaborati
 The data_preparation.py script loads and prepares the dataset for training and inference.
 
   ```bash
-      python data_preparation.py
+  python data_preparation.py
   ```
 This script reads customer interactions, purchase history, and product details data, merges them, and generates additional rows to reach a total of 1000 rows. The prepared data is saved in dataset/prepared_data.csv.
 
@@ -49,7 +49,7 @@ This script reads customer interactions, purchase history, and product details d
 The training.py script trains a collaborative filtering model using the Surprise library.
 
   ```bash
-      python training.py
+  python training.py
   ```
 This script uses the prepared data to train a collaborative filtering model, saves the trained model as model/recommendation_model_cf.joblib, and prints evaluation metrics.
 ## Inference
@@ -57,7 +57,7 @@ This script uses the prepared data to train a collaborative filtering model, sav
 The inference.py script loads the trained model and provides recommendations for a given customer.
 
   ```bash
-      python inference.py
+  python inference.py
   ```
 
 ## Web Application
@@ -65,7 +65,7 @@ The inference.py script loads the trained model and provides recommendations for
 The app.py script sets up a Flask web application for user interaction.
 
   ```bash
-      python app.py
+  python app.py
   ```
 Visit http://localhost:5000 in your browser to use the web application. The application allows users to input a customer ID and receive top product recommendations.
 
